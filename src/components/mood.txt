@@ -1,0 +1,5 @@
+date: 12/28/22 mood: Amazing
+date: 12/28/22 mood: Okay
+date: 12/28/22 mood: Angry
+date: 1/1/23 mood: Stressful
+date: 1/2/23 mood: Good
