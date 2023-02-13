@@ -34,17 +34,20 @@ const IndexPage = () => {
           if(load){
           const d = /\d{1,2}/g;
           const date = data.date.match(d);
+          console.log(date)
           if(date[2] == year){
             const myElement = document.getElementById('outline');
             for (const child of myElement.children) {
               const id = child.id;
-              console.log('in outline')
+              console.log('in outline', id)
               if(id === date[0]){
                 const monthElement = document.getElementById(id)
-                console.log('in month')
+                console.log(date[0],'in month', monthElement)
                 for (const child of monthElement.children) {
                   const id = child.id;
-                  if(id === date[1]){
+                  console.log(id)
+                  const compoundId = `${date[0]}-${date[1]}`
+                  if(id === compoundId){
                     console.log('in day', id)
                     const mood = data.mood;
                     child.classList.add(mood);
