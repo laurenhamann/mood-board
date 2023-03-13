@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Node Convert",
+            "type": "shell",
+            "command": "node ./src/components/convert.js",
+            "windows": {
+                "command": "node ./src/components/convert.js"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "runOptions": {"runOn": "folderOpen"}
+        }
+    ]
+}

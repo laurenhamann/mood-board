@@ -1,8 +1,6 @@
+const React = require("react");
 
-const React = require("react")
-
-  
-  // or commonjs
-exports.onClientEntry = () => {
-    window.onload = () => { /* do stuff */ }
-}
+// or commonjs
+// exports.onClientEntry = () => {
+//     window.onload = () => { /* do stuff */ }
+// }
