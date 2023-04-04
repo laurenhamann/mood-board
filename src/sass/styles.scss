@@ -1,179 +1,187 @@
-$good : #79C7C5;
-$okay : #C3DFE0;
-$angry : #9D0208;
-$amazing : #F15BB5;
-$ehh : #DDA15E;
-$sad : #013A63;
-$painful : #513B3C;
-$depressing : #4C5C68;
-$apathic : #DDD5D0;
-$stressful : #53FF45;
-
-main {
-    max-width: 960px;
-    margin: 1.45rem;
+$good: #79c7c5;
+$okay: #dad7cd;
+$angry: #ba5833;
+$amazing: #f15bb5;
+$ehh: #e29400;
+$sad: #457b9d;
+$painful: #5b4d9d;
+$depressing: #4c5c68;
+$apathic: #8e539d;
+$stressful: #5aa090;
+$great: #ed6b86;
+#main {
+  max-width: 960px;
+  margin: 1.45rem;
 }
 .header {
-    font-size: 42px;
+  font-size: 42px;
+  text-align: center;
+  .header-logo {
+    width: 80vw;
+    max-width: 450px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: normal;
+  }
+}
+
+.key-list {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+  padding: 2.5px;
+  justify-content: center;
+  row-gap: 0.5px;
+  column-gap: 0.5px;
+  section {
+    height: 45px;
+    width: 65px;
     text-align: center;
+    justify-self: center;
+    .key {
+      margin: 0 auto;
+    }
+  }
 }
 
-.key-list{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #000;
-    padding: 2.5px;
-    justify-content:center;
-    row-gap: 0.5px;
-    column-gap: 0.5px;
-    section {
-        height: 45px;
-        width: 65px;
-        text-align: center;
-        justify-self: center;
-        .key {
-            margin: 0 auto;
-        }
-    }
+.grid-cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
 }
 
-
-.grid-cell{
-    width: 20px;
-    height: 20px;
-    border: 1px solid #000;
-}
-
-.grid{
-    width: 70vw;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    div {
-        margin-right: 0.5px;
-        margin-bottom: 0.5px;
-    }
-   [id='1'].month::before{
-        content: 'J';
-    }
-    [id='2'].month::before{
-        content: 'F';
-    }
-    [id='3'].month::before{
-        content: 'M';
-    }
-    [id='4'].month::before{
-        content: 'A';
-    }
-    [id='5'].month::before{
-        content: 'M';
-    }
-    [id='6'].month::before{
-        content: 'J';
-    }
-    [id='7'].month::before{
-        content: 'J';
-    }
-    [id='8'].month::before{
-        content: 'A';
-    }
-    [id='9'].month::before{
-        content: 'S';
-    }
-    [id='10'].month::before{
-        content: 'O';
-    }
-    [id='11'].month::before{
-        content: 'N';
-    }
-    [id='12'].month::before{
-        content: 'D';
-    }
+.grid {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  div {
+    margin-right: 0.5px;
+    margin-bottom: 0.5px;
+  }
+  [id="1"].month::before {
+    content: "J";
+  }
+  [id="2"].month::before {
+    content: "F";
+  }
+  [id="3"].month::before {
+    content: "M";
+  }
+  [id="4"].month::before {
+    content: "A";
+  }
+  [id="5"].month::before {
+    content: "M";
+  }
+  [id="6"].month::before {
+    content: "J";
+  }
+  [id="7"].month::before {
+    content: "J";
+  }
+  [id="8"].month::before {
+    content: "A";
+  }
+  [id="9"].month::before {
+    content: "S";
+  }
+  [id="10"].month::before {
+    content: "O";
+  }
+  [id="11"].month::before {
+    content: "N";
+  }
+  [id="12"].month::before {
+    content: "D";
+  }
 }
 
 .Stressful {
-    background-color: $stressful;
+  background-color: $stressful;
 }
 .Apathic {
-    background-color: $apathic;
+  background-color: $apathic;
 }
 
 .Sad {
-    background-color: $sad;
+  background-color: $sad;
 }
 
 .Good {
-    background-color: $good;
+  background-color: $good;
 }
 
 .Ehh {
-    background-color: $ehh;
+  background-color: $ehh;
 }
 
 .Depressing {
-    background-color: $depressing;
+  background-color: $depressing;
 }
 
 .Amazing {
-    background-color: $amazing;
+  background-color: $amazing;
 }
 .Angry {
-    background-color: $angry;
+  background-color: $angry;
 }
 .Painful {
-    background-color: $painful;
+  background-color: $painful;
 }
 
 .Okay {
-    background-color: $okay;
+  background-color: $okay;
 }
 
-
+.Great {
+  background-color: $great;
+}
 
 @media only screen and (min-width: 700px) {
-    main {
-        max-width: 1200px;
-        margin:  1.45rem auto;
-        display: flex;
-        flex-direction: column;
-        .container {
-            display: flex;
-            flex-direction: row-reverse;
-            align-content: center;
-            justify-content: center;
-            margin: 3px auto;
+  main {
+    max-width: 1200px;
+    margin: 1.45rem auto;
+    display: flex;
+    flex-direction: column;
+    .container {
+      display: flex;
+      flex-direction: row-reverse;
+      align-content: center;
+      justify-content: center;
+      margin: 3px auto;
 
-            ul {
-                flex-grow: 4;
-                margin:auto;
-                align-self: center;
-            }
-        }
-        .grid {
-            width: 80vw;
-        }
+      ul {
+        flex-grow: 4;
+        margin: auto;
+        align-self: center;
+      }
     }
-    .grid-cell {
-        height: 25px;
-        width: 25px;
+    .grid {
+      width: 80vw;
     }
-    .key-list{
-        height: 500px;
-        width: 120px;
-        flex-grow: 1;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        section {
-            margin: 0 auto;
-            flex-grow: 4;
-            height: 35px;
-            width: 70px;
-            text-align: center;
-            .key {
-                margin: auto;
-            }
-        }
+  }
+  .grid-cell {
+    height: 25px;
+    width: 25px;
+  }
+  .key-list {
+    height: 500px;
+    width: 120px;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    section {
+      margin: 0 auto;
+      flex-grow: 4;
+      height: 35px;
+      width: 70px;
+      text-align: center;
+      .key {
+        margin: auto;
+      }
     }
-
+  }
 }
